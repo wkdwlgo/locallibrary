@@ -1,0 +1,106 @@
+
+
+header{
+    height: 50px;
+    background-color: #f3ebe0;
+    padding:10px;
+}
+body{
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    background-color: #bad3df;
+}
+header>nav {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+header>nav>label{
+    font-size: 32px;
+}
+header>nav>ul{
+    float: right;
+    margin-top: 10px;
+}
+header>nav>ul>li>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #726d6d;
+}
+
+header>nav>ul>li>a.active{
+ color: #3a3a3a;
+ border-bottom: 3px solid #3a3a3a;
+}
+
+header>nav>ul>li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+}
+
+header>ol>li{
+    float: left;
+    margin-right: 5px;
+    margin-left: 15px;
+    border-right:5px
+}
+#title {
+    font-weight: bold;
+    font-size: 25px;
+    border: 10px;
+    margin: 15px auto 15px; /* 가운데 정렬을 위한 margin 수정 */
+    text-align: center;
+    display: block; /* block 요소로 설정 */
+    
+}
+body>form>div>div{
+     margin-top: auto;
+}
+
+#text-button{
+    border: none;
+    background-color: #fcfdff;
+    padding: 12px 55px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin:30px;
+}
+
+#text-button:hover{
+     background-color: #f3ebe0;
+    color: #bad3df;
+}
+
+
+
+#question{
+    size: 35px;
+    margin:15px;
+    float: center;
+    padding: 30px 70px;
+    border: 15px;
+}
+
+
+footer {
+    position: fixed; /* 위치를 고정시킴 */
+    left: 0; /* 좌측에 고정 */
+    bottom: 0; /* 하단에 고정 */
+    width: 100%; /* 가로 폭을 100%로 설정 */
+    background-color: #f3ebe0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer > p {
+    margin: 0;
+}
+
+main>.all{
+    display: table-cell;
+    vertical-align: middle;
+}

@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>ChatGPT_result</title>
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'gpt/style.css' %}">
+<link rel="icon" href="gpt/icon.jpg">
+{% endblock %}
+</head>
+<body>
+    <header>
+        <nav class="wrap">
+            <label><strong>Thirteen</strong></label>
+            <!--ul>li*3>a-->
+            <ul>
+                <li><a href="/chatgpt/">ChatGPT</a></li>
+                <li><a href="/signlanguagetochatgpt/">수어-ChatGPT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+<form action="chat" method="post" entype="application/x-www-form-urlencoded">
+    {% csrf_token %}
+    <section class='all'>
+    <div id="file-module-0">
+        <label id="title">ChatGPT에게 요청하기</label>
+        <hr id="title_line">
+        <textarea id="question" name="question">{{question}}</textarea>
+    </div>
+    <div>
+        <hr>
+        <label id="title">Answer</label>
+        <p>
+        <span id="result">{{result}}</span>
+        </p>
+        </hr>
+  </div>
+    <div>
+        <button id="text-button" type="submit" >질문</button>
+    </div>
+    </section>
+</form>
+</main>
+<footer>
+    <small>All rights reserved. ©JiHae</address></small> 
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Agency - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link type="" rel="icon" href="{% static 'assets/favicon.ico' %}?after">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link type="text/css" rel="stylesheet" href="{% static 'css/styles.css' %}?after">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/cards.css' %}?after">
+        <script src="{% static 'css/styles.css' %}?after"></script>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="{% static 'assets/img/logos/aivle.svg' %}" alt="..." width="200" height="150"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+{#                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>#}
+                        <li class="nav-item"><a class="nav-link" href="/selfchatgpt">Gpts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/selfsignlanguagetochatgpt">Motion Gpts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Our Teamproject!</div>
+                <div class="masthead-heading text-uppercase">CHATGPT랑 수어로 대화해요</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">저희는 최첨단 GPT 기반 서비스를 제공합니다.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <span class="fa-stack fa-4x">
+{#                            <i class="fas fa-circle fa-stack-2x text-primary"></i>#}
+{#                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>#}
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-language fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"><a href="/selfchatgpt">ChatGPT API 사용</a></h4>
+                        <p class="text-muted">고성능 GPT를 활용하여 정확도가 높은 질문을 얻을 수 있습니다.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="fa-stack fa-4x">
+{#                            <i class="fas fa-circle fa-stack-2x text-primary"></i>#}
+{#                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>#}
+{#                            #}
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fa-solid fa-hands-asl-interpreting fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3"><a href="/selfsignlanguagetochatgpt">수어-ChatGPT 사용</a></h4>
+                        <p class="text-muted">수어를 사용하시는 분도 손쉽게 사용할 수 있는 GPT 서비스 입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Git똥차게 열심히 하는 우리 팀원들</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-squrare" src="{% static 'assets/img/team/frontend.png' %}" alt="..." />
+                            <h4>조승우, (병장) 정인환님</h4>
+                            <p class="text-muted">Back-End</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-squrare" src="{% static 'assets/img/team/backend.png' %}" alt="..." />
+                            <h4>장지해, 정광근</h4>
+                            <p class="text-muted">Front-End</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-squrare" src="{% static 'assets/img/team/infra.png' %}" alt="..." />
+                            <h4>신동화</h4>
+                            <p class="text-muted">Devops/Infra</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-squrare" src="{% static 'assets/img/team/ai.png' %}" alt="..." />
+                            <h4>김소망, 이영진</h4>
+                            <p class="text-muted">AI/DS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">최선을 다하겠습니다.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/microsoft.svg'%}" alt="..." aria-label="Microsoft Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/openai.svg'%}" alt="..." aria-label="Google Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/KT.svg'%}" alt="..." aria-label="Facebook Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="{% static 'assets/img/logos/aivle.svg'%}" alt="..." aria-label="IBM Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
